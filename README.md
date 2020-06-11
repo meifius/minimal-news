@@ -87,9 +87,9 @@ La arquitectura General elegida sera descipta como se indica en el siguiente esq
 
   <img src="./img/arquitectura-web-app.png">
 
-### Consultas de Noticias
+### Consultas de Noticias - Colector
 
-* El _SERVER_ sera responsable de hacer consultas a las distintas fuentes de noticias. 
+* El _Colector_ sera responsable de hacer consultas a las distintas fuentes de noticias. 
 * Sea cual fuere el retorno de dichas consultas. Las procesara en formato JSON y que cumplan con la _Estructructura de Dato_ para las "Noticias Mínimas". Mas adelante se detallara ésta estructura básica.
 * Una vez procesada la informacion consultada sera guardada en la _Base de Datos_.
 
