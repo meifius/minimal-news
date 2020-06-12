@@ -1,5 +1,5 @@
 {
-  "name": "comIT-proyecto",
+  "name": "comit",
   "version": "1.0.0",
   "description": "En el presente trabajo, se diseñara y desarrollara una pagina de \"Noticias Mínimas\". \r Esta web app recolectara noticias de distintas fuentes de informacion, las almacenara en un formato propio y las ofrecera al publico general como asi tambien a la pagina propia.",
   "main": "./backend/index.js",
@@ -24,5 +24,8 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.8",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
