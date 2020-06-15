@@ -1,5 +1,9 @@
 // IMPORTS
 const MongoClient = require('mongodb').MongoClient;
+let xml2js = require('xml2js');
+
+// SETTINGS
+let parser = new xml2js.Parser();
 
 // FUNCTIONS - CONTROLLERS
 
@@ -49,6 +53,18 @@ const fuentes = (uri) => {
  */
 function test (text) {
     console.log(text)
+}
+
+/**
+ * 
+ * @param {XML format} data : Informacion en XML
+ * @return {JS object} dataJS : Devuelve la informacion en JS object
+ */
+const promesaXml2JS = (data) => {
+    return new Promise( async (res, rej) => {
+        let dataJS = await parser.parseStringPromise(data);
+        res(dataJS);
+    });
 }
 
 // EXPORTS

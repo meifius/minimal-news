@@ -14,6 +14,7 @@ const DB_URI = db_uri_complete(process.env.DB_URI, process.env.DB_PASSWORD);
     // Coleccion de Noticias de forma Periodica
     setInterval( () => {
         // Fetch de Array de Noticias Crudas
+        // let news_xml = fetch(noticias_fuentes);
 
         // Conversion del Array de Noticias XML to JS
 
