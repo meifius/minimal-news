@@ -1,0 +1,21 @@
+* {
+    background-color: aquamarine;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contenedor_noticias {
+    background-color: chartreuse;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+}
+
+.celda_noticia {
+    background-color: crimson;
+    display: grid;
+    height: 80px;
+    width: 80px;
+    border: 1px black solid;
+}
