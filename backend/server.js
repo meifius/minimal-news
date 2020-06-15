@@ -23,8 +23,7 @@ app.use(express.json());
 app.get('/api/v0.1/news', async (req, res) => {
     console.log('preguntan API')
     const noticiasJson = await pedidoNoticiasJson(URL, {});
-    console.log(noticiasJson);
-    res.status(200).json( {name : "Hola, soy API"} );
+    res.status(200).json( noticiasJson );
     console.log('NEWS!!!');
 });
 
