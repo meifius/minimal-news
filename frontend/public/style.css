@@ -37,14 +37,16 @@ h1 {
 .celda_noticia {
 	/* background: linear-gradient(175deg, rgba(9,184,152,1) 0%, rgba(254,206,174,0.95) 0%, rgba(255,132,124,0.75) 20%, rgba(232,74,95,1) 55%, rgba(42,54,59,1) 100%); */
 	/* background: linear-gradient(175deg, #00F583 0%, #0E965E 30%, #15674B 95%, #1C3738 100%); */
-	background-color: #E9CE78;
+	/* background-color: #E9CE78;  */
+	/* background-color: #ff8900; */
+	background-color: #e7902b;
     display: grid;
 	grid-template-columns: 250px;
 	grid-template-rows: 30px 160px 40px;
 	grid-template-areas: "fuente" "titulo" "link";
     border: 1px white solid;
 	border-radius: 8px;
-	
+	margin-bottom: 20px;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.45);
 	text-align: center;
 	
