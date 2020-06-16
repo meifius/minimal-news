@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Variables y Constantes
     const CANTIDAD_NOTICIAS = 24;
-    const URL = 'https://meifius.run.goorm.io/api/v0.1/news';
+    const URL = 'https://minimal-news.run.goorm.io/api/v0.1/news';
 
     // Programa Principal
     crearNoticias(contenedorNoticias, CANTIDAD_NOTICIAS);
