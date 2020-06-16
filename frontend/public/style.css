@@ -1,21 +1,97 @@
 * {
-    background-color: aquamarine;
     box-sizing: border-box;
-    font-family: sans-serif;
+	font-family: 'Jost', sans-serif;
+}
+
+body {
+	/* width:100vh;
+	height: 100vh; */
+	align-items: center;
+	justify-content: center;
+	font-family: 'Jost', sans-serif;
+	background-color: #2a363b;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Girassol', cursive;
+	font-size: 60px;
+	letter-spacing: 15px;
+	color: white;
 }
 
 .contenedor_noticias {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    height: 80%;
+	justify-content: space-around;
+	grid-row-gap: 1em;
+    width: 100%;
+    height: auto;
+	margin-bottom: 15px;
 }
 
 .celda_noticia {
-    background-color: crimson;
+	/* background: linear-gradient(175deg, rgba(9,184,152,1) 0%, rgba(254,206,174,0.95) 0%, rgba(255,132,124,0.75) 20%, rgba(232,74,95,1) 55%, rgba(42,54,59,1) 100%); */
+	/* background: linear-gradient(175deg, #00F583 0%, #0E965E 30%, #15674B 95%, #1C3738 100%); */
+	background-color: #E9CE78;
     display: grid;
-    height: 80px;
-    width: 80px;
-    border: 1px black solid;
+	grid-template-columns: 250px;
+	grid-template-rows: 30px 160px 40px;
+	grid-template-areas: "fuente" "titulo" "link";
+    border: 1px white solid;
+	border-radius: 8px;
+	
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.45);
+	text-align: center;
+	
+	overflow: hidden;
+}
+
+.fuente {
+	grid-area: fuente;
+}
+
+.titulo {
+	grid-area: titulo;
+	background-color: rgba(0, 0, 0, 0.45);
+	color: #f7f7f7;
+	display: inline-block;
+	overflow: hidden;
+	padding-top: 13px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.link {
+	grid-area: link;
+	/* background-color: #1a262b; #F94836 rgb(249, 72, 54) F4E8CB 6DC4AF*/
+	background-color: #F94836;
+	border: none;
+	color: white;
+	padding: 7px 5px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	/* font-size: 13px; */
+	/* margin: 2px 1px; */
+	cursor: pointer;
+}
+
+.link:hover {
+	grid-area: link;
+	background-color: white;
+	border: none;
+	color: #1a262b;
+	padding: 7px 5px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	/* font-size: 13px; */
+	/* margin: 2px 1px; */
+	cursor: pointer;
 }

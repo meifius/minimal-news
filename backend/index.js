@@ -1,4 +1,4 @@
-// INDEX as entry point
+// INDEX
 
 //IMPORT
 const app = require('./server')
